@@ -1,0 +1,12 @@
+root@PC:~/GenesisH0# python genesis.py -a scrypt -z "The Times 03-05-2021 Social distancing to be scrapped" -t 1620044049 -n 2000000000
+04ffff001d0104355468652054696d65732030332d30352d3230323120536f6369616c2064697374616e63696e6720746f206265207363726170706564
+algorithm: scrypt
+merkle hash: aacd1848b98922cd34f3a2649a2a7397acf217707550c1a39c62f2393a703f50
+pszTimestamp: The Times 03-05-2021 Social distancing to be scrapped
+pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+time: 1620044049
+bits: 0x1e0ffff0
+Searching for genesis hash..
+genesis hash found!
+nonce: 2000238184
+genesis hash: 16f53ceb8764d3452459935f34408fc4f1fada58c5c54ac55daab63b0030376b

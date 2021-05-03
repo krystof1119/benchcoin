@@ -1,34 +1,22 @@
-Contributing to Litecoin Core
+Contributing to Benchcoin Core
 ============================
 
-The Litecoin Core project operates an open contributor model where anyone is
+The Benchcoin Core project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
 
-Firstly in terms of structure, there is no particular concept of "Core
-developers" in the sense of privileged people. Open source often naturally
-revolves around meritocracy where longer term contributors gain more trust from
-the developer community. However, some hierarchy is necessary for practical
-purposes. As such there are repository "maintainers" who are responsible for
-merging pull requests as well as a "lead maintainer" who is responsible for the
-release cycle, overall merging, moderation and appointment of maintainers.
+The "Lead developer" in charge of merging patches, resolving conflicts, etc.
+is the owner of the Github repository. There are no "Core developers" but them.
+Anyone submitting patches is welcome to fork Benchcoin Core in case any issues
+or conflicts arise.
 
 Communication Channels
 ----------------------
 
-Most communication about Litecoin Core development happens on IRC, in the
-#litecoin-dev channel on Freenode. The easiest way to participate on IRC is
-with the web client, [webchat.freenode.net](https://webchat.freenode.net/).
-
 Discussion about code base improvements happens in GitHub issues and on pull
-requests.
-
-The developer
-[mailing list](https://groups.google.com/forum/#!forum/litecoin-dev)
-should be used to discuss complicated or controversial changes before working on
-a patch set.
-
+requests. There is currently no mailing list or IRC channel for any other
+discussion.
 
 Contributor Workflow
 --------------------
@@ -74,12 +62,12 @@ the pull request affects. Valid areas as:
 
   - *Consensus* for changes to consensus critical code
   - *Docs* for changes to the documentation
-  - *Qt* for changes to litecoin-qt
+  - *Qt* for changes to benchcoin-qt
   - *Mining* for changes to the mining code
   - *Net* or *P2P* for changes to the peer-to-peer network code
   - *RPC/REST/ZMQ* for changes to the RPC, REST or ZMQ APIs
   - *Scripts and tools* for changes to the scripts and tools
-  - *Tests* for changes to the litecoin unit tests or QA tests
+  - *Tests* for changes to the benchcoin unit tests or QA tests
   - *Trivial* should **only** be used for PRs that do not change generated
     executable code. Notably, refactors (change of function arguments and code
     reorganization) and changes in behavior should **not** be marked as trivial.
@@ -192,12 +180,12 @@ workload on reviewing.
 "Decision Making" Process
 -------------------------
 
-The following applies to code changes to the Litecoin Core project (and related
-projects such as libsecp256k1), and is not to be confused with overall Litecoin
+The following applies to code changes to the Benchcoin Core project (and related
+projects such as libsecp256k1), and is not to be confused with overall Benchcoin
 Network Protocol consensus changes.
 
-Whether a pull request is merged into Litecoin Core rests with the project merge
-maintainers and ultimately the project lead.
+Whether a pull request is merged into Benchcoin Core rests with the project merge
+maintainers (if any) and ultimately the project lead.
 
 Maintainers will take into consideration if a patch is in line with the general
 principles of the project; meets the minimum standards for inclusion; and will
@@ -214,10 +202,10 @@ In general, all pull requests must:
   - Where bugs are fixed, where possible, there should be unit tests
     demonstrating the bug and also proving the fix. This helps prevent regression.
 
-Patches that change Litecoin consensus rules are considerably more involved than
+Patches that change Benchcoin consensus rules are considerably more involved than
 normal because they affect the entire ecosystem and so must be preceded by
-extensive mailing list discussions and have a numbered BIP. While each case will
-be different, one should be prepared to expend more time and effort than for
+extensive discussions in a relevant place and have a numbered BIP. While each case
+will be different, one should be prepared to expend more time and effort than for
 other kinds of patches because of increased peer review and consensus building
 requirements.
 
@@ -230,7 +218,7 @@ test out the patch set and opine on the technical merits of the patch. Project
 maintainers take into account the peer review when determining if there is
 consensus to merge a pull request (remember that discussions may have been
 spread out over GitHub, mailing list and IRC discussions). The following
-language is used within pull-request comments:
+language may be used within pull-request comments:
 
   - ACK means "I have tested the code and I agree it should be merged";
   - NACK means "I disagree this should be merged", and must be accompanied by
@@ -255,8 +243,8 @@ higher in terms of discussion and peer review requirements, keeping in mind that
 mistakes could be very costly to the wider community. This includes refactoring
 of consensus critical code.
 
-Where a patch set proposes to change the Litecoin consensus, it must have been
-discussed extensively on the mailing list and IRC, be accompanied by a widely
+Where a patch set proposes to change the Benchcoin consensus, it should have been
+discussed extensively in any and all relevant places, be accompanied by a widely
 discussed BIP and have a generally widely perceived technical consensus of being
 a worthwhile change based on the judgement of the maintainers.
 
@@ -295,7 +283,7 @@ about:
 Release Policy
 --------------
 
-The project leader is the release manager for each Litecoin Core release.
+The project leader is the release manager for each Benchcoin Core release.
 
 Copyright
 ---------

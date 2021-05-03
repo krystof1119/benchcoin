@@ -17,6 +17,22 @@
 
 static std::atomic<int64_t> nMockTime(0); //!< For unit testing
 
+#if defined(_WIN32)
+#ifndef gmtime_r
+static struct tm* gmtime_r(const time_t* t, struct tm* r)
+{
+  // gmtime is threadsafe in windows because it uses TLS
+  struct tm *theTm = gmtime(t);
+  if (theTm) {
+    *r = *theTm;
+    return r;
+  } else {
+    return 0;
+  }
+}
+#endif // gmtime_r
+#endif
+
 int64_t GetTime()
 {
     int64_t mocktime = nMockTime.load(std::memory_order_relaxed);
